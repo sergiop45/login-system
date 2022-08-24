@@ -1,0 +1,53 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    width: 30%;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.formLogin h2 {
+    margin: 10px 0;
+    color: blueviolet;
+}
+
+.formLogin input {
+    margin: 10px 0;
+}
+
+.formLogin label {
+    font-weight: bold;
+}
+
+.formLogin a {
+    font-size: 10px;
+}
+
+.formLogin button {
+    margin: 10px 0;
+    background-color: blueviolet;
+    padding: 7px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.formLogin button:hover {
+    font-weight: bold;
+    color: white;
+}
