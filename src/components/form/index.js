@@ -4,8 +4,25 @@ import './style.css'
 class Form extends Component {
 
     constructor(props) {
+        
         super(props);
+        
+        this.state = {
+            user: "",
+            pass: ""
+        }
+
+        this.login = this.login.bind(this);
+
     }
+
+    login(e) {
+        e.preventDefault();
+        let usuario = this.state.user;
+        let senha = this.state.pass;
+        alert("user: " + usuario + " senha: " + senha);
+    }
+
 
     render() {
 
@@ -13,17 +30,17 @@ class Form extends Component {
 
             <div className='tela'>
                 
-                <form className='formLogin'>
+                <form className='formLogin'  >
 
                     <h2>Fazer Login</h2>
 
                     <label>Usuario</label>
-                    <input type="text" />
+                    <input type="text" onChange={(e) => this.setState({user: e.target.value})} />
 
                     <label>Senha</label>
-                    <input type="password" />
+                    <input type="password" onChange={(e) => this.setState({pass: e.target.value})}/>
 
-                    <button>Entrar</button>
+                    <button onClick={(e) => this.login(e)}>Entrar</button>
 
                     <a href='#'>Não é usuario? Faça seu cadastro aqui.</a>
 

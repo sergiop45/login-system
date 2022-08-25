@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .tela {
@@ -30,20 +31,26 @@
 
 .formLogin input {
     margin: 10px 0;
+    border-radius: 5px;
 }
 
 .formLogin label {
     font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .formLogin a {
     font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color:blueviolet;
+    margin-top: 10px;
 }
 
 .formLogin button {
     margin: 10px 0;
     background-color: blueviolet;
-    padding: 7px;
+    padding: 4px;
     border-radius: 5px;
     font-weight: bold;
 }
